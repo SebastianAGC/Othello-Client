@@ -118,13 +118,13 @@ function heuristic(gameBoard, player){
 	cornerBonus = 10
 	riskArea = 4
 
-	//cheking corners
+	//checking corners
 	if (gameBoard[0] == player) playerPieces += cornerBonus
     if (gameBoard[7] == player) playerPieces += cornerBonus
     if (gameBoard[56] == player) playerPieces += cornerBonus
     if (gameBoard[63] == player) playerPieces += cornerBonus
 
-    //cheking risk areas
+    //checking risk areas
     if(gameBoard[1] == player) playerPieces -= riskArea
     if(gameBoard[6] == player) playerPieces -= riskArea
     if(gameBoard[8] == player) playerPieces -= riskArea
@@ -154,13 +154,13 @@ function evaluateBoard(gameBoard, player) {
     })
 
     const cornerBonus = 10
-    //cheking corners
+    //checking corners
 	if (gameBoard[0] == 1) player1Pieces += cornerBonus
     if (gameBoard[7] == 1) player1Pieces += cornerBonus
     if (gameBoard[56] == 1) player1Pieces += cornerBonus
     if (gameBoard[63] == 1) player1Pieces += cornerBonus
 
-    //cheking corners
+    //checking corners
 	if (gameBoard[0] == 2) player2Pieces += cornerBonus
     if (gameBoard[7] == 2) player2Pieces += cornerBonus
     if (gameBoard[56] == 2) player2Pieces += cornerBonus
